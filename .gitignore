@@ -1,2 +1,72 @@
-/virtual
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+/virtual 
+
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# Media and static files (optional, if generated)
+media/
+staticfiles/
+
+# Environment variables
 .env
+*.env
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Mac/Linux system files
+.DS_Store
+Thumbs.db
+
+# Migrations cache
+*/migrations/__pycache__/
+
+# Coverage/test reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.hypothesis/
+
+# MyPy and type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Build/dist
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Backup files
+*.bak
+*.tmp
+*.orig

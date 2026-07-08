@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    {% comment %} This is conditional rendering {% endcomment %}
+    {% if user.Authenticated %}
+    <p>{{user.username}}</p>
+    {% else %}
+    <p>Please Login</p>
+    {% endif %}
+
+    {% comment %} for tag {% endcomment %}
+
+    {% for user in user %}
+    <li>{{user.name}}</li>
+    <li>{{user.title}}</li>
+    {% endfor %}
+
+</main>
+
+{% endblock  %}
