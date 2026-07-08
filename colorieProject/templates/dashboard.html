@@ -1,4 +1,5 @@
  {% extends "base.html" %}
+ {% load static %}
 
 
  {% block title  %}
@@ -11,6 +12,14 @@
  <main>
     <h1>This is the dashboard Page</h1>
    <h2>{{content | upper}}</h2>
+   <div id="photos">
+    <img src="{% static "images/hodan.jpg" %}" alt="Zoobe Tower">
+   <img src="{% static "images/zoobe.jpg" %}" alt="Zoobe Tower">
+   <img src="{% static "images/MOGA.jpg" %}" alt="Zoobe Tower">
+   <img src="{% static "images/hodan.jpg" %}" alt="Zoobe Tower">
+   <img src="{% static "images/zoobe.jpg" %}" alt="Zoobe Tower">
+   <img src="{% static "images/MOGA1.jpg" %}" alt="Zoobe Tower">
+   </div>
  </main>
  
  {% endblock  %}
