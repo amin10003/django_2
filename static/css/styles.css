@@ -46,10 +46,22 @@ form div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  margin-left: 40%;
+  align-items: center;
   margin-bottom: 20px;
+  width: max-content;
 }
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+form button {
+  align-self: center; 
+}
+
 
 img{
     height: 450px;
