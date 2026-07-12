@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.http import HttpResponse
 from .models import *
 from .forms import *
+from django.contrib.auth import logout
 
 
 
@@ -53,4 +54,13 @@ def add_blog(request):
 
 
 def custom_404_view(request, exception):
-    return render(request, "404.html", status=404)
+    return render(request, "404.html", status=404)\
+        
+        
+
+
+def logout_view(request):
+    if request.method == "POST":
+        logout(request)
+        messages.success(request, "You have been logged out successfully.")
+    return redirect("login")
