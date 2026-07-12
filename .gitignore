@@ -1,72 +1,91 @@
-# Python bytecode and cache
+# Created by https://www.gitignore.io
+venv/
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Python ###
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
 
-# Virtual environments
-/virtual 
+# C extensions
+*.so
 
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Django stuff
-*.log
-*.pot
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
-db.sqlite3
+# PyInstaller
+*.manifest
+*.spec
 
-# Media and static files (optional, if generated)
-media/
-staticfiles/
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Environment variables
-.env
-*.env
-
-# IDE/editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Mac/Linux system files
-.DS_Store
-Thumbs.db
-
-# Migrations cache
-*/migrations/__pycache__/
-
-# Coverage/test reports
+# Unit test / coverage reports
 htmlcov/
+.tox/
 .coverage
-.coverage.*
 .cache
 nosetests.xml
 coverage.xml
-*.cover
-*.py,cover
-*.hypothesis/
 
-# MyPy and type checking
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# Translations
+*.mo
+*.pot
 
-# Pytest
-.pytest_cache/
+# Sphinx documentation
+docs/_build/
 
-# Jupyter Notebook
-.ipynb_checkpoints/
+# PyBuilder
+target/
 
-# Build/dist
-build/
-dist/
-*.egg-info/
-.eggs/
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
 
-# Backup files
-*.bak
-*.tmp
-*.orig
+.env*
+virtual/
+myenv/
+node_modules/
+db.sqlite3
+node_modules
+qrcodes/*.png
+
+.env
