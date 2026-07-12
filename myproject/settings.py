@@ -30,7 +30,7 @@ cloudinary.config(
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "colorieProject",
+    "django_registration",
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,7 @@ STATIC_URL = "static/"
 
 
 STATICFILES_DIRS = [BASE_DIR / "static"]
+
+
+LOGIN_REDIRECT_URL = "/home/"
+LOGIN_URL = "login/"
